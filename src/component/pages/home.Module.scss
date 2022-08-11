@@ -1,0 +1,62 @@
+.home {
+	padding: 20px;
+	border: 1px solid black;
+	margin-top: 100px;
+	background-color: rgb(221, 220, 220);
+	display: flex;
+	align-items: center;
+	column-gap: 100px;
+	box-shadow: 0 0 10px black;
+	position: relative;
+	&::before{
+		content: '';
+		left: 43%;
+		position: absolute;
+		width: 1px;
+		height: 100%;
+		background-color: black;
+	}
+}
+.balance {
+	&__numbers{
+		display: flex;
+		row-gap: 10px;
+		flex-direction: column;
+	}
+	&__items{
+		row-gap: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__name{
+		margin-bottom: 20px;
+		font-weight: 600;
+		&_margin{
+			margin-top: 20px;
+		}
+	}
+	&__item {
+		display: flex;
+		column-gap: 40px;
+		align-items: center;
+	}
+	&__number{
+		flex: 1;
+	}
+	&__btn{
+		padding: 10px 15px;
+		background-color: red;
+		border: 1px black solid;
+		cursor: pointer;
+		color: #fff;	
+		transition: 0.7s;
+		&:hover{
+			background-color: #fff;
+			color: black;
+		}	
+	}
+	&__card{
+		margin-top: 50px;
+	}
+}
+

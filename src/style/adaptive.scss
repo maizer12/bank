@@ -1,0 +1,41 @@
+@media(max-width:1010px){
+	.home{
+		flex-direction: column;
+		&::before{
+			background: none;
+		}
+	}
+	.setting{
+		margin-top: 20px;
+		&__buttons{
+			justify-content: center;
+		}
+	}
+	.container{
+		width: auto;
+	}
+	.popup {
+		top: 20%;
+	}
+}
+@media(max-width:550px){
+	.home{
+		padding: 10px;
+		margin-top: 40px;
+	}
+	.setting__item{
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+	}
+}
+@media(max-width:440px){
+	.form__content{
+		width: 320px;
+	}
+}
+@media(max-width:384px){
+	.setting__buttons{
+		flex-direction: column;
+	}
+}
